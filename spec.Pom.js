@@ -13,9 +13,9 @@ describe('Should enter credentials', function () {
         browser.driver.manage().window().maximize();
         loginCredentials.setCredentials('', '');
         browser.sleep(2000);
-        loginCredentials.setCredentials('roman.gonzalez@amplemind.com', '123123123');
+        loginCredentials.setCredentials('noe.ruvalcaba@amplemind.com', 'pass$123');
         browser.sleep(2000);
-        loginCredentials.setCredentials('roman.gonzalez@amplemind.com', 'A123123123');
+        loginCredentials.setCredentials('noe.ruvalcaba@amplemind.com', 'pass$123');
         browser.sleep(2000);
     });
 
@@ -25,9 +25,9 @@ describe('Should enter credentials', function () {
         recoverPassword.enterRecoveryPage();
         recoverPassword.setUserEmail('');
         browser.sleep(2000);
-        recoverPassword.setUserEmail('roman.gonzalez@amplemindcom');
+        recoverPassword.setUserEmail('noe.ruvalcaba@amplemind.com');
         browser.sleep(2000);
-        recoverPassword.setUserEmail('roman.gonzalez@amplemind.com');
+        recoverPassword.setUserEmail('noe.ruvalcaba@amplemind.com');
         browser.sleep(2000);
     });
 });
